@@ -78,3 +78,180 @@ for i in range(1,a+1):
             break
         else:
             print(j,end=" ")
+            
+            
+#palindrome or not
+# n=input("enter the any input:")
+# def ispalindrome():
+#     return n==n[::-1]
+# ans=ispalindrome()
+# if ans:
+#     print("given string is palindrome")
+# else:
+#     print("given string is not a palindrome")
+#------------
+
+# gcd using recursion
+# first_input=int(input("enter the first number:"))
+# second_input=int(input("enter the second number:"))
+# def gcd(a,b):
+#     if b==0:
+#         return a
+#     else:
+#         return gcd (b,a%b)
+# ans=gcd(first_input,second_input)
+# print(ans)
+#--------------
+
+# gcd using loop
+# first_input=int(input("enter the first number:"))
+# second_input=int(input("enter the second number:"))
+# def gcdloop(a,b):
+#     if a>b:
+#         temp=a
+#     else:
+#         temp=b
+#     for i in range(1,temp+1):
+#         if a%i==0 and b%i==0:
+#             gcd=i
+#     return gcd
+# ans=gcdloop(first_input,second_input)
+# print(ans)
+#--------------    
+
+#multiplication table
+# a=2
+# def tables():
+#     for i in range(1,11):
+#         print(a,'x',i,'=',a*i)
+# tables()
+#--------------
+
+#bubble sort
+# def bubblesort(arr):
+#     n=len(arr)
+#     for i in range(n):
+#         for j in range(0,n-i-1):
+#             if arr[j]>arr[j+1]:
+#                 arr[j],arr[j+1]=arr[j+1],arr[j]
+
+# l=int(input("enter the num of elements:"))
+# arr=[]
+# for i in range(l):
+#     arr.append(int(input("enter the element:")))
+# bubblesort(arr)
+# print("sorted array is:")
+# for i in range(len(arr)):
+#     print(arr[i],end=" ")
+#------------
+
+#selection sort
+# def selectionsort(arr):
+#     n=len(arr)
+#     for i in range(n):
+#         min=i
+#         for k in range(i+1,n):
+#             if arr[k]<arr[min]:
+#                 min=k
+#         arr[i],arr[min]=arr[min],arr[i]
+# l=int(input("enter the num of elements:"))
+# arr=[]
+# for i in range(l):
+#     arr.append(int(input("enter the element:")))
+# selectionsort(arr)
+# print("sorted array is:")
+# for i in range(len(arr)):
+#     print(arr[i],end=" ")
+#----------------
+
+#insertion sort
+# def insertionsort(arr):
+#     n=len(arr)
+#     for i in range(1,n):
+#         temp=arr[i]
+#         j=i-1
+#         while j>=0 and temp<arr[j]:
+#             arr[j+1]=arr[j]
+#             j-=1
+#         arr[j+1]=temp
+#     return arr
+# l=int(input("enter the num of elements:"))
+# arr=[]
+# for i in range(l):
+#     arr.append(int(input("enter the element:")))
+# insertionsort(arr)
+# print("sorted array is:")
+# for i in range(len(arr)):
+#     print(arr[i],end=" ")
+#-------------
+
+# linearsearch
+# def linearsearch(arr,key):
+#     for i in range(len(arr)):
+#         if key==arr[i]:
+#             return i
+#     return -1
+# l=int(input("enter the num of elements:"))
+# arr=[]
+# for i in range(l):
+#     arr.append(int(input("enter the element:")))
+# key=int(input("enter the key:"))
+# result=linearsearch(arr,key)
+
+# if result==-1:
+#     print("element is not found")
+# else:
+#     print("element is found is at index:",result)
+#---------------------------
+
+
+#binarysearch with recursion
+# def binarysearch(arr,lb,ub,key):
+#     if ub>=lb:
+#         mid=(lb+ub)//2
+#         if arr[mid]==key:
+#             return mid
+#         elif arr[mid]<key:
+#             return binarysearch(arr,mid+1,ub,key)
+#         else:
+#             return binarysearch(arr,lb,mid-1,key)
+#     else:
+#         return -1
+# l=int(input("enter the num of elements:"))
+# arr=[]
+# for i in range(l):
+#     arr.append(int(input("enter the element:")))
+# key=int(input("enter the key:"))
+# result=binarysearch(arr,0,len(arr)-1,key)
+
+# if result==-1:
+#     print("element is not found")
+# else:
+#     print("element is found is at index:",result)
+#-----------------------------
+
+# binarysearch with iteration
+# def binarysearch(arr,lb,ub,key):
+#     while ub>=lb:
+#         mid=(lb+ub)//2
+#         if arr[mid]==key:
+#             return mid
+#         elif arr[mid]<key:
+#             lb=mid+1
+#         else:
+#             ub=mid-1
+#     else:
+#         return -1
+# l=int(input("enter the num of elements:"))
+# arr=[]
+# for i in range(l):
+#     arr.append(int(input("enter the element:")))
+# key=int(input("enter the key:"))
+# result=binarysearch(arr,0,len(arr)-1,key)
+
+# if result==-1:
+#     print("element is not found")
+# else:
+#     print("element is found is at index:",result)
+#-------------------------
+
